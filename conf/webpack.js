@@ -1,5 +1,4 @@
 const webpack = require('webpack')
-const PrettierPlugin = require('prettier-webpack-plugin')
 
 module.exports = {
   entry: { //ビルドするファイル
@@ -30,11 +29,10 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.ProvidePlugin(),
-    // new webpack.ProvidePlugin({
-    //   jQuery: 'jquery',
-    //   $: 'jquery'
-    // })
+    new webpack.ProvidePlugin({
+      jQuery: 'jquery',
+      $: 'jquery'
+    }),
     new PrettierPlugin()
   ]
 }
