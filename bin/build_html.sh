@@ -1,3 +1,3 @@
 #!/bin/sh
 
-pug -O src/pug/data/data.json -P src/pug/page/ --out dist
+pug -O src/html/data/data.json -P src/html/page/ --out dist
