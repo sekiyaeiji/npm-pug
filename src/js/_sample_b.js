@@ -1,5 +1,5 @@
 // sample
-module.exports = function () {
+module.exports = function() {
   'use strict'
 
   const sampleA = require('./_sample_a')

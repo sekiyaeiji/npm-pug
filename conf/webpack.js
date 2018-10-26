@@ -1,4 +1,5 @@
 const webpack = require('webpack')
+const PrettierPlugin = require('prettier-webpack-plugin')
 
 module.exports = {
   entry: { //ビルドするファイル
@@ -9,7 +10,7 @@ module.exports = {
     filename: '[name].js' //ビルドした後のファイル名
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
@@ -29,10 +30,17 @@ module.exports = {
     ]
   },
   plugins: [
+    new PrettierPlugin({
+      printWidth: 120,
+      tabWidth: 2,
+      singleQuote: true,
+      trailingComma: 'all',
+      semi: false,
+      bracketSpacing: true
+    }),
     new webpack.ProvidePlugin({
       jQuery: 'jquery',
       $: 'jquery'
-    }),
-    new PrettierPlugin()
+    })
   ]
 }
