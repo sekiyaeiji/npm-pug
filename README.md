@@ -57,10 +57,6 @@
 
 # CSS開発方針
 
-## 設計方針
-
-- [設計方針](設計方針)
-
 ## セレクター命名方針
 
 - [MindBEMding](https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
