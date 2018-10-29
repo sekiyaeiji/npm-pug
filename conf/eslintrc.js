@@ -3,7 +3,7 @@ const ERROR = 2;
 
 module.exports = {
   extends: [
-    'eslint-config-gnavi',
+    'eslint-config-standard',
     'prettier'
   ],
   parser: 'babel-eslint',
@@ -13,8 +13,6 @@ module.exports = {
     browser: true,
   },
   globals: {
-    // global変数許可設定
-    gNaviGlobalState: true,
     google: true,
   },
   plugins: [
