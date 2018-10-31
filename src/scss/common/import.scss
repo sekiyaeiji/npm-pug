@@ -1,7 +1,9 @@
 @charset "utf-8";
 
+// config
+@import "./../config/_variable.scss";
+
 // settings
-@import "_variable.scss";
 @import "_reset.scss";
 @import "_selector.scss";
 @import "_common.scss";

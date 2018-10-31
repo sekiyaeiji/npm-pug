@@ -52,7 +52,7 @@
         └ page/ : page
       └ img/ : 画像
       └ js/
-      └ scss/
+      └ css/
 
 
 # CSS開発方針
