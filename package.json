@@ -12,7 +12,7 @@
     "build": "bin/build.sh",
     "clean": "bin/clean.sh",
     "watch:html": "chokidar src/html/* -c 'npm run build:html'",
-    "watch:css": "chokidar src/css/* -c 'npm run build:js-css'",
+    "watch:css": "chokidar src/scss/* -c 'npm run build:js-css'",
     "watch:js": "chokidar src/js/* -c 'npm run build:js-css'",
     "watch:image": "chokidar src/img/* -c 'npm run build:image'",
     "watch:server": "browser-sync start -s 'dist/' -f dist/* --port 8080 ",
