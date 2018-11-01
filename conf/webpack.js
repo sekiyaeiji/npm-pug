@@ -10,8 +10,8 @@ module.exports = [
       common: './src/js/common.js'
     },
     output: {
-      path: __dirname + '/../dist/js', //ビルドしたファイルを吐き出す場所(絶対パス)
-      filename: '[name].js' //ビルドした後のファイル名
+      path: __dirname + '/../dist/js',
+      filename: '[name].js'
     },
     module: {
       rules: [
