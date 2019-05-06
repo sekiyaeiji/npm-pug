@@ -45,13 +45,13 @@
 編集対象は src/ 以下のみ
 
     src/
-      └ html/
+      └ img/
+      └ js/
+      └ pug/
         └ data/ : data
         └ include/ : parts
         └ layout/ : layout
         └ page/ : page
-      └ img/ : 画像
-      └ js/
       └ scss/
 
 
