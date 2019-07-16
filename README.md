@@ -1,62 +1,42 @@
 # npm-pug
 
-# package
 
-## package installed
+## 開発環境
 
-- [package.jsonを参照](package.json)
+### node version
 
-# config
-
-## install
-
-### install
-
-    npm i
-
-### build
-
-    npm run build
-
-## watch command
-
-    npm run watch
-
-## clean dist/、tmp/ command
-
-    npm run clean
+* [.node-version](.node-version)
+* 10.15.1
 
 
-# ルートディレクトリ構成
+### インストール
 
-    bin/ : ビルド・デプロイシェル
-    conf/ : 設定ファイル
-    dist/ : 出力ディレクトリ
-    src/ : 開発ディレクトリ
-    tmp/ : 中間生成物一時保管ディレクトリ
-    .editorconfig
-    .gitignore
-    package.json
-    README.md
+```sh
+$ git clone ［本リポジトリ .git パス］
+$ cd ［clone したディレクトリのローカルルート］
+$ yarn
+```
 
 
-# 開発ディレクトリ構成
+## タスク
 
-編集対象は src/ 以下のみ
+### ローカル開発
 
-    src/
-      └ img/
-      └ js/
-      └ pug/
-        └ data/ : data
-        └ include/ : parts
-        └ layout/ : layout
-        └ page/ : page
-      └ scss/
+```sh
+$ yarn dev
+```
+
+* 以下のタスクを実行
+	* clean
+	* build
+	* browser-sync
+	* watch
+* browser-sync によりブラウザを自動起動
+* <http://localhost:8001/> でローカル確認
+* chokidar src/〜 の更新監視により保存時自動リロード
 
 
-# CSS開発方針
+## packages
 
-## セレクター命名方針
+* [package.json](package.json)
 
-- [MindBEMding](https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)

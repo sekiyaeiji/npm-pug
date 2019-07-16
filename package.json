@@ -1,7 +1,7 @@
 {
   "name": "npm-pug",
   "description": "",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "index",
   "license": "ISC",
   "scripts": {
@@ -15,8 +15,10 @@
     "watch:pug": "chokidar src/pug/* -c 'npm run build:pug'",
     "watch:scss": "chokidar src/scss/* -c 'npm run build:scss'",
     "watch:js": "chokidar src/js/* -c 'npm run build:js-css'",
-    "watch:server": "browser-sync start -s 'dist/' -f dist/* --port 8080 ",
-    "watch": "bin/build.sh && npm-run-all -p watch:*"
+    "watch:server": "browser-sync start -s 'dist/' -f dist/* --port 8001",
+    "watch": "bin/build.sh && npm-run-all -p watch:*",
+    "dev": "yarn watch",
+    "start": "yarn watch"
   },
   "devDependencies": {
     "autoprefixer": "^7.2.6",
