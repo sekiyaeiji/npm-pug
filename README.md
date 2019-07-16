@@ -1,6 +1,11 @@
 # npm-pug
 
 
+## packages
+
+* [package.json](package.json)
+
+
 ## 開発環境
 
 ### node version
@@ -34,9 +39,4 @@ $ yarn dev
 * browser-sync によりブラウザを自動起動
 * <http://localhost:8001/> でローカル確認
 * chokidar src/〜 の更新監視により保存時自動リロード
-
-
-## packages
-
-* [package.json](package.json)
 
